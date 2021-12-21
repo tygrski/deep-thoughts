@@ -7,4 +7,5 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/deep-thoughts',
   useFindAndModify: false
 });
 
+// exported mongoose connection to serer js
 module.exports = mongoose.connection;
